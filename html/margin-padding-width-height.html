@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .box-inner {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .box-inner .box-content {
+            background-color: #fff;
+            height: 100px;
+            width: 200px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CSS Layout Properties Example</h1>
+        </header>
+
+        <section class="content">
+            <div class="box">
+                <h2>Box with Margin and Padding</h2>
+                <p>This box has margin and padding applied.</p>
+            </div>
+
+            <div class="box">
+                <h2>Collapsing Margins</h2>
+                <p>Collapsing margins can affect spacing between elements.</p>
+            </div>
+
+            <div class="box">
+                <h2>Box with Width and Height</h2>
+                <div class="box-inner">
+                    <div class="box-content">
+                        Content with specified width and height.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 CSS Layout Properties Example</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units Guide</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            font-size: 1.5em;
+        }
+
+        p {
+            text-align: justify;
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-top: 2px solid #388E3C;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .example {
+            margin: 20px 0;
+        }
+
+        .example-box {
+            width: 50%;
+            padding: 1em;
+            background-color: #e0f7fa;
+            border: 1px solid #00acc1;
+            margin: 0 auto;
+        }
+
+        .viewport-example {
+            width: 50vw;
+            height: 50vh;
+            background-color: #ffccbc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .absolute-example {
+            width: 3in;
+            height: 2in;
+            background-color: #d1c4e9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Units Guide</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Relative Units</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>px</td>
+                        <td>Pixel. In CSS2 this is a relative measure, while in CSS3 it is absolute (1/96 of an inch).
+                        </td>
+                        <td>Relative (CSS2), Absolute (CSS3)</td>
+                    </tr>
+                    <tr>
+                        <td>em</td>
+                        <td>Equal to the computed value of the font-size property of the element on which it is used.
+                            When used for font sizes, the em unit is in relation to the font size of the parent.</td>
+                        <td>Relative</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>A measure that is always relative to another value. The precise meaning of % varies
+                            depending upon which property it is being used.</td>
+                        <td>Relative</td>
+                    </tr>
+                    <tr>
+                        <td>ex</td>
+                        <td>A rarely used relative measure that expresses size in relation to the x-height of an
+                            element’s font.</td>
+                        <td>Relative</td>
+                    </tr>
+                    <tr>
+                        <td>ch</td>
+                        <td>A relative measure; this one expresses size in relation to the width of the zero ("0")
+                            character of an element’s font.</td>
+                        <td>Relative (CSS3 only)</td>
+                    </tr>
+                    <tr>
+                        <td>rem</td>
+                        <td>Stands for root em, which is the font size of the root element. Unlike em, which may be
+                            different for each element, the rem is constant throughout the document.</td>
+                        <td>Relative (CSS3 only)</td>
+                    </tr>
+                    <tr>
+                        <td>vw, vh</td>
+                        <td>Stands for viewport width and viewport height. Both are percentage values (between 0 and
+                            100) of the viewport (browser window). This allows an item to change size when the viewport
+                            is resized.</td>
+                        <td>Relative (CSS3 only)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Absolute Units</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Unit</th>
+                        <th>Description</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>in</td>
+                        <td>Inches</td>
+                        <td>Absolute</td>
+                    </tr>
+                    <tr>
+                        <td>cm</td>
+                        <td>Centimeters</td>
+                        <td>Absolute</td>
+                    </tr>
+                    <tr>
+                        <td>mm</td>
+                        <td>Millimeters</td>
+                        <td>Absolute</td>
+                    </tr>
+                    <tr>
+                        <td>pt</td>
+                        <td>Points (equal to 1/72 of an inch)</td>
+                        <td>Absolute</td>
+                    </tr>
+                    <tr>
+                        <td>pc</td>
+                        <td>Pica (equal to 1/6 of an inch)</td>
+                        <td>Absolute</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="example">
+            <h2>Examples of Relative Units</h2>
+            <div class="example-box">
+                This box uses <code>%</code> and <code>em</code> units for its size and padding.
+            </div>
+            <div class="viewport-example">
+                This box uses <code>vw</code> and <code>vh</code> units for its size.
+            </div>
+        </section>
+        <section class="example">
+            <h2>Examples of Absolute Units</h2>
+            <div class="absolute-example">
+                This box uses <code>in</code> units for its size.
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CSS Units Guide</p>
+    </footer>
+</body>
+
+</html>

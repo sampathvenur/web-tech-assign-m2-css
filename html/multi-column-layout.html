@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Multicolumn Layout with Floats Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .column-container {
+            overflow: hidden;
+        }
+
+        .column {
+            float: left;
+            width: calc(50% - 10px);
+            margin-right: 20px;
+            margin-bottom: 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .column:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CSS Multicolumn Layout with Floats Example</h1>
+        </header>
+
+        <section class="content">
+            <div class="column-container">
+                <div class="column">
+                    <h2>Column 1</h2>
+                    <p>This is the content of column 1.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum, eros sit amet
+                        convallis suscipit, nisi sem volutpat dolor, et auctor risus eros sed mi.</p>
+                </div>
+                <div class="column">
+                    <h2>Column 2</h2>
+                    <p>This is the content of column 2.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum, eros sit amet
+                        convallis suscipit, nisi sem volutpat dolor, et auctor risus eros sed mi.</p>
+                </div>
+                <div class="column">
+                    <h2>Column 3</h2>
+                    <p>This is the content of column 3.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum, eros sit amet
+                        convallis suscipit, nisi sem volutpat dolor, et auctor risus eros sed mi.</p>
+                </div>
+                <div class="column">
+                    <h2>Column 4</h2>
+                    <p>This is the content of column 4.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum, eros sit amet
+                        convallis suscipit, nisi sem volutpat dolor, et auctor risus eros sed mi.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 CSS Multicolumn Layout with Floats Example</p>
+        </footer>
+    </div>
+</body>
+
+</html>

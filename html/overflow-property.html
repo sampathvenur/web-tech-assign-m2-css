@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow and Sizing Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow: auto;
+            height: 200px;
+        }
+
+        .long-content {
+            height: 400px;
+            overflow: scroll;
+        }
+
+        .small-box {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CSS Overflow and Sizing Example</h1>
+        </header>
+
+        <section class="content">
+            <div class="box">
+                <h2>Overflow: Auto</h2>
+                <p>This box has a fixed height with overflowing content. Scrollbars will appear when content exceeds the
+                    height.</p>
+                <div class="long-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae luctus lectus, at
+                        viverra orci. Donec vel nisi sit amet urna ullamcorper pellentesque. Fusce commodo dui at est
+                        facilisis, et pharetra felis tristique. Integer sit amet ipsum id turpis fermentum feugiat. Nam
+                        et convallis lorem. Proin ullamcorper aliquet odio, eget sodales sem consectetur non. Vestibulum
+                        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque ac leo
+                        at risus egestas pulvinar.</p>
+                    <p>Donec sodales erat quis enim posuere, eget bibendum nisi commodo. Ut sit amet quam eget odio
+                        fermentum hendrerit. Aliquam erat volutpat. Nullam in risus vitae turpis vestibulum iaculis.
+                        Cras id ex non enim lobortis congue. Duis in elit malesuada, viverra elit eget, fermentum elit.
+                        In tempor ex ac nibh feugiat, sit amet tempus augue tincidunt. Aenean nec felis vitae nisl
+                        vehicula faucibus.</p>
+                </div>
+            </div>
+
+            <div class="box overflow-hidden">
+                <h2>Overflow: Hidden</h2>
+                <p>This box has overflowing content, but it is hidden beyond its boundaries.</p>
+                <div class="small-box">Box</div>
+            </div>
+
+            <div class="box">
+                <h2>Fixed Size Element</h2>
+                <p>This box has a fixed width and height.</p>
+                <div class="small-box">Small</div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 CSS Overflow and Sizing Example</p>
+        </footer>
+    </div>
+</body>
+
+</html>

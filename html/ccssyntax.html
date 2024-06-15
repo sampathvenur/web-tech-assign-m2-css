@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Syntax and Selectors</title>
+    <style>
+        body,
+        h1,
+        h2,
+        p,
+        ul {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #333;
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Understanding CSS Syntax and Selectors</h1>
+    </header>
+    <main>
+        <section>
+            <h2>CSS Syntax</h2>
+            <p>CSS is used to style HTML elements. A CSS rule consists of a selector and a declaration block.</p>
+            <p>The basic syntax is:</p>
+            <pre>
+                selector {
+                    property: value;
+                }
+            </pre>
+            <p>For example:</p>
+            <pre>
+                p {
+                    color: blue;
+                }
+            </pre>
+            <p>In this example, <code>p</code> is the selector, <code>color</code> is the property, and
+                <code>blue</code> is the value.</p>
+        </section>
+        <section>
+            <h2>Selectors</h2>
+            <p>Selectors are used to target the HTML elements you want to style. Here are some common types of
+                selectors:</p>
+            <ul>
+                <li><strong>Element Selector:</strong> Targets all instances of a given HTML element. E.g.,
+                    <code>p</code></li>
+                <li><strong>Class Selector:</strong> Targets elements with a specific class attribute. E.g.,
+                    <code>.myClass</code></li>
+                <li><strong>ID Selector:</strong> Targets a single element with a specific ID attribute. E.g.,
+                    <code>#myId</code></li>
+                <li><strong>Attribute Selector:</strong> Targets elements with a specific attribute. E.g.,
+                    <code>[type="text"]</code></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CSS Tutorial</p>
+    </footer>
+</body>
+
+</html>

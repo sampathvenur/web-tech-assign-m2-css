@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 5px 0;
+            }
+
+            .content {
+                padding: 10px;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Responsive Design Example</h1>
+        </header>
+
+        <section class="content">
+            <h2>Responsive Image</h2>
+            <img src="/images/background-border.jpg" alt="Responsive Image" class="responsive-image" width="600px">
+            <p>This image adjusts its size based on the viewport width due to CSS styling.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor leo non enim consectetur, sit amet
+                molestie libero tempus. Mauris et bibendum felis. Fusce rutrum condimentum tincidunt. Nulla facilisi.
+            </p>
+            <p>Vestibulum convallis felis et magna tincidunt, vel tincidunt elit elementum. Cras ullamcorper dolor in
+                metus faucibus, quis ultrices nulla molestie. Donec nec sollicitudin mi. Duis vehicula ex a lectus
+                consectetur, quis tempus libero efficitur.</p>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Responsive Design Example</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .image-border {
+            border: 5px solid #4CAF50;
+            border-radius: 50%;
+            display: inline-block;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CSS Border Properties Example</h1>
+        </header>
+
+        <section class="box">
+            <h2>Box with Border</h2>
+            <p>This section demonstrates a box with a solid border.</p>
+        </section>
+
+        <section class="box">
+            <h2>Box with Rounded Border</h2>
+            <p>This section demonstrates a box with a rounded border using border-radius.</p>
+        </section>
+
+        <section>
+            <h2>Circle Image with Border</h2>
+            <div class="image-border">
+                <img src="/images/background-border.jpg" alt="Circle Image" width="150" height="150">
+            </div>
+            <p>This is an image with a circular border using border-radius.</p>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 CSS Border Properties Example</p>
+        </footer>
+    </div>
+</body>
+
+</html>

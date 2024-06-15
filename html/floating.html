@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Floating with a Container Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .float-container {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+        }
+
+        .float-item {
+            float: left;
+            width: calc(33.33% - 20px);
+            margin-right: 20px;
+            margin-bottom: 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CSS Floating with a Container Example</h1>
+        </header>
+
+        <section class="content">
+            <div class="float-container clearfix">
+                <h2>Floating Multiple Items Side by Side</h2>
+                <div class="float-item">
+                    <p>Item 1</p>
+                    <p>Description of Item 1.</p>
+                </div>
+                <div class="float-item">
+                    <p>Item 2</p>
+                    <p>Description of Item 2.</p>
+                </div>
+                <div class="float-item">
+                    <p>Item 3</p>
+                    <p>Description of Item 3.</p>
+                </div>
+            </div>
+
+            <div class="float-container clearfix">
+                <h2>Containing Floats</h2>
+                <div class="float-item">
+                    <p>Item 4</p>
+                    <p>Description of Item 4.</p>
+                </div>
+                <div class="float-item">
+                    <p>Item 5</p>
+                    <p>Description of Item 5.</p>
+                </div>
+                <div class="float-item">
+                    <p>Item 6</p>
+                    <p>Description of Item 6.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 CSS Floating with a Container Example</p>
+        </footer>
+    </div>
+</body>
+
+</html>

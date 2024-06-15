@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS Box Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .main-content {
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Using CSS Box Model</h1>
+        </header>
+
+        <section class="main-content">
+            <div class="box">
+                <h2>Box Model Basics</h2>
+                <p>This section demonstrates the CSS Box Model in action.</p>
+                <p>The box model includes content, padding, border, and margin.</p>
+            </div>
+
+            <div class="box">
+                <h2>Box Model Application</h2>
+                <p>Applying the box model helps in creating structured layouts.</p>
+                <p>Elements have defined spacing and dimensions using padding and margin.</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 CSS Box Model Example</p>
+        </footer>
+    </div>
+</body>
+
+</html>

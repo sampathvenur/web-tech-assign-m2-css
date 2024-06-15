@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Guide</title>
+    <style>
+        h2 {
+            color: navy;
+        }
+
+        p {
+            margin: 5px 0 10px 0;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2, p {
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        #main-title {
+            font-size: 24px;
+            color: #4CAF50;
+        }
+
+        img[title] {
+            cursor: help;
+            padding-bottom: 3px;
+            border-bottom: 2px dotted blue;
+            text-decoration: none;
+        }
+
+        div > p {
+            font-style: italic;
+        }
+
+        div img {
+           width: 400px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="main-title">Share Your Travels</h1>
+    </header>
+    <main>
+        <div class="highlight">
+            <img src="/images/canada-flag.jpg" title="Canada Flag" />
+            <h2><a href="countries.php?id=CA" title="See posts from Canada">Canada</a></h2>
+            <p>Canada is a North American country consisting of...</p>
+            <div>
+                <img src="/images/sulphur-mountain.jpg" title="At top of Sulphur Mountain">
+                <img src="/images/GracePresbyterian_MainExteriorPhoto_1200x675.webp" title="Grace Presbyterian Church">
+                <img src="/images/Downtown_Calgary_2020-2.jpg" title="Calgary Downtown">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Share Your Travels</p>
+    </footer>
+</body>
+</html>

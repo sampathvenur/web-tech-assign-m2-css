@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Relative and Absolute Positioning Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .relative-positioning {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+
+        .absolute-positioning {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            position: relative;
+        }
+
+        .absolute-positioning .absolute-box {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CSS Relative and Absolute Positioning Example</h1>
+        </header>
+
+        <section class="content">
+            <div class="relative-positioning">
+                <h2>Relative Positioning</h2>
+                <p>This div is positioned relatively, which means it maintains its normal flow position but can be
+                    shifted using offsets.</p>
+                <p>Relative positioning allows other elements to flow around it.</p>
+            </div>
+
+            <div class="absolute-positioning">
+                <h2>Absolute Positioning</h2>
+                <p>This div is positioned absolutely within its relatively positioned parent.</p>
+                <div class="absolute-box">Absolute Box</div>
+                <p>Absolute positioning removes the element from the normal flow of the document and positions it
+                    relative to its nearest positioned ancestor (in this case, the parent with relative positioning).
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 CSS Relative and Absolute Positioning Example</p>
+        </footer>
+    </div>
+</body>
+
+</html>

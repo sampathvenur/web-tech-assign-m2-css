@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Examples: Fixed, Liquid, Hybrid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .fixed-layout {
+            width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+        }
+
+        .liquid-layout {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hybrid-layout {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CSS Layout Examples: Fixed, Liquid, Hybrid</h1>
+        </header>
+
+        <section class="content">
+            <div class="fixed-layout">
+                <h2>Fixed Layout</h2>
+                <p>This layout has a fixed width of 800px.</p>
+            </div>
+
+            <div class="liquid-layout">
+                <h2>Liquid Layout</h2>
+                <p>This layout has a maximum width of 100%.</p>
+            </div>
+
+            <div class="hybrid-layout">
+                <h2>Hybrid Layout</h2>
+                <p>This layout has a maximum width of 1200px, combining fixed and liquid characteristics.</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 CSS Layout Examples: Fixed, Liquid, Hybrid</p>
+        </footer>
+    </div>
+</body>
+
+</html>

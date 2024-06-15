@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Normal Flow and Inline Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .normal-flow {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .normal-flow p {
+            margin-bottom: 10px;
+        }
+
+        .inline-elements {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .inline-elements p {
+            display: inline;
+            margin-right: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CSS Normal Flow and Inline Elements Example</h1>
+        </header>
+
+        <section class="content">
+            <div class="normal-flow">
+                <h2>Normal Flow of Elements</h2>
+                <p>This is a paragraph in the normal flow of the document. It follows the default block-level behavior.
+                </p>
+                <p>Another paragraph in the normal flow. Each paragraph starts on a new line.</p>
+            </div>
+
+            <div class="inline-elements">
+                <h2>Inline Elements</h2>
+                <p>This example demonstrates inline elements styled with CSS.</p>
+                <p><span>Inline</span> <span>elements</span> <span>styled</span> <span>with</span> <span>CSS</span></p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 CSS Normal Flow and Inline Elements Example</p>
+        </footer>
+    </div>
+</body>
+
+</html>
